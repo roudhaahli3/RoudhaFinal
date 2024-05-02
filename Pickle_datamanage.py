@@ -16,29 +16,29 @@ employees = [
     Employee("Salma J Sam", "EMP003", JobTitle.SALES_PERSON, 30000, 32, "1992-08-28", "EF345678"),
     Employee("Joy Rogers", "EMP004", JobTitle.MARKETING_MANAGER, 55000, 40, "1984-02-10", "GH901234"),
     Employee("Mariam Khalid", "EMP005", JobTitle.MARKETER, 40000, 35, "1989-11-05", "IJ567890"),
-    Employee("John Doe", "EMP006", JobTitle.ACCOUNTANT, 45000, 38, "1986-07-12", "KL123456")
+    Employee("Roudha Ahli", "EMP006", JobTitle.ACCOUNTANT, 45000, 38, "1986-07-12", "KL123456")
 ]
 
 events = [
-    Event("EV001", EventType.WEDDINGS, "Classic Wedding", "2024-06-15", "18:00", 6, "123 Main St", "CLI001", "INV001")
+    Event("EV001", EventType.WEDDINGS, "Summer Wedding", "2024-06-15", "18:00", 6, "Lake Como", "CLI001", 100000)
 ]
 
 clients = [
-    Client("CLI001", "Smith & Co.", "456 Oak St", "smith@example.com", 20000)
+    Client("CLI001", "Smith & Co.", "456 Oak St", "smith@outlook.com", 60000)
 ]
 
 guests = [
-    Guest("G001", "John Smith", "456 Oak St", "john@example.com"),
-    Guest("G002", "Alice Johnson", "789 Elm St", "alice@example.com")
+    Guest("G001", "Damon Salvatore", "456 Oak St", "damon@gmail.com"),
+    Guest("G002", "Hind Ahli", "789 Khawaneej St", "hind123@gmail.com")
 ]
 
 suppliers = [
-    Supplier("SUP001", "Delicious Caterers", "789 Maple St", "catering@example.com", SupplierType.CATERING),
-    Supplier("SUP002", "Sparkling Cleaners", "101 Pine St", "cleaning@example.com", SupplierType.CLEANING)
+    Supplier("SUP001", "Delicious Caterers", "789 Jumeirah St", "catering@gmail.com", SupplierType.CATERING),
+    Supplier("SUP002", "Sparkling Cleaners", "101 Wasl St", "cleaning@gmail.com", SupplierType.CLEANING)
 ]
 
 venues = [
-    Venue("VEN001", "Grand Hall", "123 Main St", "venue@example.com", 50, 200)
+    Venue("VEN001", "Grand Hall", "Burj Al Arab", "bestvenues@gmail.com", 50, 200)
 ]
 
 # Saving data to files

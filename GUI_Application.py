@@ -86,27 +86,27 @@ class EventManagementSystemGUI:
         if entity == "Employees":
             for emp in self.employees:
                 if emp.get_employee_id() == id_number:
-                    return emp.get_name() + " - " + emp.get_job_title().value
+                    return "Name:" + emp.get_name() + " - Job Title: " + emp.get_job_title().value +  " - Salary: " + str(emp.get_basic_salary()) + " - Age: " + str(emp.get_age()) + " - DOB: " + emp.get_date_of_birth() + " - Passport: " + emp.get_passport_details()
         elif entity == "Events":
             for event in self.events:
                 if event.get_event_id() == id_number:
-                    return event.get_event_type().value + " - " + event.get_theme()
+                    return "Event Type:" + event.get_event_type().value + " - Theme: " + event.get_theme() + " - Date: " + event.get_date() + " - Time: " + str(event.get_time()) + " - Duration: " + str(event.get_duration()) + " - Venue Address: " + event.get_venue_address() + " - Client id " + event.get_client_id() + " - Invoice: " + str(event.get_invoie())
         elif entity == "Clients":
             for client in self.clients:
                 if client.get_client_id() == id_number:
-                    return client.get_name() + " - " + client.get_address()
+                    return "Name:" + client.get_name() + " - Address: " + client.get_address() + " - Contact: " + client.get_contact_details() + " - Budget: " + str(client.get_budget())
         elif entity == "Guests":
             for guest in self.guests:
                 if guest.get_guest_id() == id_number:
-                    return guest.get_name() + " - " + guest.get_address()
+                    return "Name:" + guest.get_name() + " - Address: " + guest.get_address() + " - Contact: " + guest.get_contact_details()
         elif entity == "Suppliers":
             for supplier in self.suppliers:
                 if supplier.get_supplier_id() == id_number:
-                    return supplier.get_name() + " - " + supplier.get_address()
+                    return "Name:" + supplier.get_name() + " - Address: " + supplier.get_address() + " - Conatct: " + supplier.get_contact_details() + " - Supplier: " + supplier.get_supplier_type().value
         elif entity == "Venues":
             for venue in self.venues:
                 if venue.get_venue_id() == id_number:
-                    return venue.get_name() + " - " + venue.get_address()
+                    return "Name:" + venue.get_name() + " - Address: " + venue.get_address() + " - Contact: " + venue.get_contact_details() + " - Min Guests: " + str(venue.get_min_guests()) + " - Max Guests: " + str(venue.get_max_guests())
         return None
 
 root = tk.Tk()
